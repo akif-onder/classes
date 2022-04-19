@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #seker{
+        #seker, #seker2{
             width: 50%;
             border: 3px solid red;
         }
@@ -90,7 +90,7 @@
         <div>
             <label for="seker"> Hangi tatlıyı seversiniz:</label>
             <br>
-            <select name="seçilen_tatlılar" id="seker" size="3" multiple>
+            <select name="seçilen_tatlılar" id="seker" size="7" multiple>
 
                 <option value="Sütlaç">Sütlaç</option>
                 <option value="Keşkül">Keşkül</option>
@@ -100,6 +100,30 @@
                 <option value="Güllaç">Güllaç</option>
             </select>
             
+        </div>
+<hr>
+        <div>
+            <label for="seker2"> Hangi tatlıyı seversiniz:</label>
+            <br>
+
+            <select name="tatlılar" id="seker2" size="10">
+
+                <optgroup label="Sütlü tatlılar">
+                <option value="Sütlaç">Sütlaç</option>
+                <option value="Keşkül">Keşkül</option>
+                <option value="Süpangle">Süpangle</option>
+                <option value="Soguk baklava">Soguk baklava</option>
+                </optgroup>
+
+                <optgroup label="Şerbetli tatlılar">
+                <option value="Baklava">Baklava</option>
+                <option value="Künefe">Künefe</option>
+                <option value="Katmer">Katmer</option>
+                <option value="Tulumba">Tulumba</option>
+                </optgroup>
+            </select>
+
+
         </div>
 
 
