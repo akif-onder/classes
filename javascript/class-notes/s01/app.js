@@ -51,6 +51,7 @@ otherStudent.number1 = 'F9876';
 
 console.log(student);
 
+// ! this gives error
 otherStudent = {
   firstName: 'Sinan',
   number: 'F3456',
