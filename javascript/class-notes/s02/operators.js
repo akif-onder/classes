@@ -49,7 +49,7 @@ console.log({a},{b})
 // console.log(a == b)
 
 
-let d;
+/* let d;
 let e = 'Hello World'
 console.log(d ?? e)
 console.log(e ?? d)
@@ -58,4 +58,4 @@ let f = null;
 
 console.log(f ?? d)
 
-console.log(d ?? 0)
+console.log(d ?? 0) */
