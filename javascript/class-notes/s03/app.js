@@ -1,4 +1,4 @@
-console.log('**********\nSession 3 - Conditionals\n**********');
+// console.log('**********\nSession 3 - Conditionals\n**********');
 // ! if statement example
 // check if the is positive
 
@@ -56,7 +56,7 @@ console.log('**********\nSession 3 - Conditionals\n**********');
 // } else console.log(`${n3} is the greatest among ${n2} and ${n1}`);
 
 // ! ternary examples
-console.log('----------\nternary if statements\n----------');
+// console.log('----------\nternary if statements\n----------');
 
 // program to check pass or fail
 // let grade = prompt('Enter your score :');
@@ -64,17 +64,17 @@ console.log('----------\nternary if statements\n----------');
 // let result = grade >= 50 ? 'pass' : 'fail';
 // console.log(`You ${result} the exam.`);
 
-const age = 18;
-let result;
-if (age >= 18) {
-  result = 'You are eligible to vote.';
-} else {
-  result = 'You are not eligible to vote yet.';
-}
+// const age = 18;
+// let result;
+// if (age >= 18) {
+//   result = 'You are eligible to vote.';
+// } else {
+//   result = 'You are not eligible to vote yet.';
+// }
 
-result =
-  age >= 18 ? 'You are eligible to vote.' : 'You are not eligible to vote yet';
-console.log(result);
+// result =
+//   age >= 18 ? 'You are eligible to vote.' : 'You are not eligible to vote yet';
+// console.log(result);
 
 // if (n1 > 0) {
 //   console.log(`${n1} is positive`);
@@ -101,18 +101,117 @@ console.log(result);
 // const usingRegularCar = false;
 // // // const usingDisabledCar = true;
 
-let canDrive = false;
-const hasDriversLicense = true;
-const hasGoodVision = true;
-const isHandicapped = false;
-const usingRegularCar = true;
+// let canDrive = false;
+// const hasDriversLicense = true;
+// const hasGoodVision = true;
+// const isHandicapped = false;
+// const usingRegularCar = true;
 
-result =
-  hasDriversLicense && hasGoodVision
-    ? !isHandicapped
-      ? 'can drive'
-      : !usingRegularCar
-      ? 'can drive'
-      : 'cannot drive'
-    : 'cannot drive';
-console.log(result);
+// result =
+//   hasDriversLicense && hasGoodVision
+//     ? !isHandicapped
+//       ? 'can drive'
+//       : !usingRegularCar
+//       ? 'can drive'
+//       : 'cannot drive'
+//     : 'cannot drive';
+// console.log(result);
+
+console.log('----------\nswitch case statements\n----------');
+
+let text;
+// let fruit = prompt('type your favorite fruit');
+// banana, lime, limon, orange, apple, default
+
+// switch (fruit.toLowerCase()) {
+//   case 'banana':
+//     text = 'I like Banana!🍌';
+//     break;
+//   case 'lime':
+//   case 'lemon':
+//   case 'orange':
+//     text = `I am not a fan of ${fruit}`;
+//     break;
+//   case 'apple':
+//     text = `I like 🍎🍏`;
+//     break;
+
+//   default:
+//     text = "I don't know that fruit";
+// }
+
+// console.log(text);
+
+// ! example-5  cw weekly program ❗your turn 🧑‍💻
+// pazartesi salı çarşamba perşembe in class
+// cuma team work
+// cumartesi inclass + workshop
+// pazar self study
+// default yanlış gün girildi.
+
+// const day = prompt('enter a day: ').toLowerCase();
+
+// switch (day) {
+//   case 'monday':
+//   case 'tuesday':
+//   case 'wednesday':
+//   case 'thursday':
+//     console.log(`Inclass`);
+//     break;
+//   case 'friday':
+//     console.log(`Teamwork`);
+//     break;
+//   case 'saturday':
+//     console.log(`Inclass and workshop`);
+//     break;
+//   case 'sunday':
+//     console.log(`Self study.`);
+//     break;
+//   default:
+//     console.log(`${day} is not a day.`);
+// }
+
+// ! example 5
+// output day count of a month of given year 2020 02 => 29
+// 2022 02 => 28
+
+//leap year
+let year = 2020;
+let month = 1;
+let dayCount;
+switch (month) {
+  case 1:
+  case 3:
+  case 5:
+  case 7:
+  case 8:
+  case 10:
+  case 12:
+    dayCount = 31;
+    break;
+  case 4:
+  case 6:
+  case 9:
+  case 11:
+    dayCount = 30;
+    break;
+  case 2:
+    if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) dayCount = 29;
+    else dayCount = 28;
+    break;
+  default:
+    dayCount = -1; // invalid month
+}
+
+console.log(dayCount); // 29
+
+// ! example-6 path selection
+
+/*
+path = "ad", "fs", "ds" // ad => aws-devops , fs u know, ds => data-science
+pathInfo = ""; // provide some information about the selected path.
+*/
+
+// const pathSelected = prompt(
+//   'Which path would you like to attend?\nad -> aws-devops\nfs -> full-stack\nds -> data-science'
+// );
