@@ -4,9 +4,38 @@
  <meta charset="UTF-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Document</title>
+ <title>LİST</title>
+<style>
+.item{
+ /* list-style-type: none; */
+
+ /* list-style-position: inside; */
+
+/* list-style-image:url("./images/locaiton.png"); */
+
+/* list-style-type:"\263B"; */
+
+list-style:square inside url("./images/rocket.png");
+
+}
+
+li:before{
+ content:"\263B";
+ color:tomato;
+ padding-right:10px;
+ font-size:50px;
+}
+
+</style>
+
+
 </head>
 <body>
- 
+ <ul>
+  <li class="item item1">list1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel atque ipsam deleniti nesciunt vitae dolor recusandae mollitia perspiciatis quibusdam ab.</li>
+  <li class="item item2">list2</li>
+  <li class="item item3">list3</li>
+  <li class="item item4">list4</li>
+ </ul>
 </body>
 </html>
