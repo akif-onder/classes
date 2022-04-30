@@ -1,69 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Document</title>
-<style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLE</title>
+    <style>
+        caption{
+            font-weight: 700;
+            margin-bottom:10px;
+            border:2px solid black;
+        }
+        table,th,td{
+            border:1px solid white;
+            border-collapse: collapse;
+            /* içiçe çift çizgiler olmasın diye */
+        }
+        table{
+            width: 100%;
+        }
+        th{
+            height: 30px;
+            vertical-align:top;
+            padding:10px;
+            background-color: cornflowerblue;
+        }
+        td{
+            height: 25px;
+            padding:5px;
+            text-align: center;
+            /* background-color: darksalmon; */
+            color:darkslategrey;
+        }
+        td:hover{
+             /* td:nth-child(odd):hover{ */
+            background-color:lightslategray;
+        }
 
-caption{
- font-weight: 900;
- border:2px solid black;
- margin-bottom:10px;
-}
+        tr:nth-child(odd){
+            background-color:lightsalmon;
+        }
+        tr:nth-child(even){
+            background-color:crimson;
+        }
+ /* tr:hover{
+            background-color:lightslategray;
+        }  */
+         /* bunu kullanmak istiyorsam, tr lere renk vermediysem sıkıntı yok ama renk verdiysem onlardan sonra yazmalıyım ki çalışsın ve tdatalara renk vermemiş olmam gerekiyor */
 
-table,th,td{
-
- border:1px solid black;
-border-collapse: collapse;
-
-}
-table{
- width:100%;
-}
-th{
-height:30px;
-vertical-align:top;
-padding:10px;
-background-color:cornflowerblue;
-
-}
-
-td{
-height:25px;
-padding:5px;
-text-align: center;
-/* background-color:red; */
-}
-
-
-/* td:nth-child(odd):hover */
-
-td:hover{
-background-color:gray;
-}
-
-tr:nth-child(odd){
-
- background-color:lightsalmon;
-}
-
-tr:nth-child(even){
- background-color:crimson;
-}
-
- tr:hover{
- background-color:lightslategray;
-} 
-
-
-
-
- </style>
+    </style>
 </head>
 <body>
- <table id="staffTable">
+   
+    <table id="staffTable">
         <caption>CLARUSWAY STAFF LIST</caption>
         <tr>
             <th>No</th>
@@ -135,8 +124,6 @@ tr:nth-child(even){
         </tr>
         
     </table>
-
-
-
+    
 </body>
 </html>
