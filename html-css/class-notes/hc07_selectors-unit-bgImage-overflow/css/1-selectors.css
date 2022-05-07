@@ -1,3 +1,7 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 h1 {
   color: red;
 }
@@ -8,12 +12,28 @@ nav.menu {
 }
 
 nav.menu .list {
-   list-style-type: '🎗️';
+  list-style-type: '🎗️';
   padding: 0;
   list-style-position: inside;
 }
 
 nav.menu ul li a {
   text-decoration: none;
+  color: white;
+}
 
+nav.menu .list .aktif {
+  background-color: black;
+}
+
+nav.menu ul li:hover a {
+  color: yellow;
+}
+
+nav.menu ul li:hover {
+  background-color: red;
+}
+
+nav.menu .list .aktif:hover {
+  background-color: red;
 }
