@@ -1,0 +1,19 @@
+h1 {
+  color: red;
+}
+
+nav.menu {
+  background-color: grey;
+  width: 150px;
+}
+
+nav.menu .list {
+   list-style-type: '🎗️';
+  padding: 0;
+  list-style-position: inside;
+}
+
+nav.menu ul li a {
+  text-decoration: none;
+
+}
