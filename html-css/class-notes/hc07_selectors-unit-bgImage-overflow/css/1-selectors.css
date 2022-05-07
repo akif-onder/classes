@@ -22,9 +22,18 @@ nav.menu ul li a {
   color: white;
 }
 
-nav.menu .list .aktif {
+/* nav.menu .list .aktif {
+  background-color: black;
+} */
+
+nav.menu .list li:first-child,
+li:last-child {
   background-color: black;
 }
+
+/* nav.menu .list li:nth-child(even) {
+  background-color: purple;
+} */
 
 nav.menu ul li:hover a {
   color: yellow;
@@ -36,4 +45,12 @@ nav.menu ul li:hover {
 
 nav.menu .list .aktif:hover {
   background-color: red;
+}
+
+nav.menu .list li:last-child::after {
+  content: '❤️';
+}
+
+nav.menu .list li:first-child::before {
+  content: '❗';
 }
