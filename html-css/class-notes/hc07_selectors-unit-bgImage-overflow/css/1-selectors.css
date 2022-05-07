@@ -57,3 +57,23 @@ nav.menu .list li:first-child::before {
   color: green;
   content: '\f0c7';
 }
+
+/*! kutu class'ı içindeki tüm p elementlerini seçer */
+.kutu p {
+  color: green;
+}
+
+/*! parent'ı kutu olan tüm p elementlerini seçer */
+.kutu > p {
+  color: purple;
+}
+
+/*! h2 elementi kapatıldıktan sonraki ilk p elementini seçer */
+/* h2 + p {
+  background-color: pink;
+} */
+
+/*! h2 elementi kapandıktan sonraki tüm p elementlerini seçer  */
+h2 ~ p {
+  background-color: yellowgreen;
+}
