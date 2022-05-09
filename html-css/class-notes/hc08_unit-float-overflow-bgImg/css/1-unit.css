@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+}
+.abs {
+  background-color: aqua;
+  width: 10mm;
+  width: 10cm;
+  width: 100px;
+}
+
+.div2 {
+  background-color: tomato;
+  width: 50%;
+  height: 50%;
+}
+
+.div3 {
+  background-color: violet;
+  width: 50%;
+  height: 50%;
+}
+.div4 {
+  background-color: yellowgreen;
+  width: 50vw;
+}
