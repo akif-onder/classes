@@ -73,7 +73,19 @@ header ul li a:hover {
 }
 .main__search-bar--input {
   width: 380px;
-  font-size: 13px;
+  height: 30px;
+  font-size: 14px;
   border: none;
-  padding: 2px;
+  outline: none;
+  margin-top: 2px;
+}
+
+.main__search-bar--magnifier {
+  width: 30px;
+  vertical-align: middle;
+}
+
+.main__search-bar--mic {
+  width: 15px;
+  vertical-align: middle;
 }
