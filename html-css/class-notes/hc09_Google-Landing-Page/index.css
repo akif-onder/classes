@@ -1,0 +1,45 @@
+/** Resetting */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  text-decoration: none;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+/*! HEADER */
+.header {
+  padding: 15px;
+}
+
+.header__left {
+  float: left;
+}
+
+.header__right {
+  float: right;
+}
+header ul li {
+  display: inline-block;
+}
+
+header ul li a {
+  color: black;
+  padding: 0.5rem;
+}
+
+.header__right--appicon {
+  vertical-align: middle;
+}
+
+.header__right--button {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  width: 96px;
+  height: 36px;
+  border-radius: 4px;
+  font-weight: 600;
+}
