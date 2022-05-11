@@ -89,3 +89,29 @@ header ul li a:hover {
   width: 15px;
   vertical-align: middle;
 }
+
+.main__buttons--left,
+.main__buttons--right {
+  width: 146px;
+  border: none;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  margin: 30px 0;
+  padding: 0 16px;
+  height: 36px;
+}
+
+.main__buttons--left:hover,
+.main__buttons--right:hover {
+  border: 1px solid #d3d3d3;
+  box-shadow: rgb(211, 211, 211) 1px 1px 10px;
+  cursor: pointer;
+}
+
+.main__language a:hover {
+  text-decoration: underline;
+}
+/*! FOOTER */
+
+
+
