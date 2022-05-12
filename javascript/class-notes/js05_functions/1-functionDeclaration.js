@@ -39,7 +39,8 @@ selamla('jason');
 //***************************************************************/
 
 function yasHesapla(year, name) {
-  const mesaj = `${name} in yaşı ${2022 - year} dir `;
+  // const mesaj = `${name} in yaşı ${2022 - year} dir `;
+  const mesaj = `${name} in yaşı ${new Date().getFullYear() - year} dir `;
   return mesaj;
 }
 
