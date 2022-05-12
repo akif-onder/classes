@@ -46,3 +46,12 @@ function yasHesapla(year, name) {
 
 const mesaj1 = yasHesapla(2001, 'Elif');
 console.log(mesaj1);
+
+//* Örnek4: Parametreli, Dönüş değerli
+//**********************************************************/
+console.log(tekCift(5));
+console.log(tekCift(2));
+
+function tekCift(number) {
+  return number % 2 === 0 ? `${number} çifttir` : `${number} tekdir`;
+}
