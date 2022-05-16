@@ -80,7 +80,7 @@ console.log(cars.sort());
 const rakamlar = [3, 5, 1, 10, 55];
 console.log(rakamlar.sort()); //! Alfabetik sıralıdığı için doğru sonuç çıkmayabilri.
 
-//* sort metodu diziyi iterasyona uğratır ve prametre olark aldığı arrow fonksiyonunu dizini her bir elemanına uygular. Bu sayade küçük sayılar ile büyük sayıları yer değişirerek sıralama işlemini gerçekleştirir.
+//* sort metodu diziyi iterasyona uğratır ve parametre olark aldığı arrow fonksiyonunu dizinin her bir elemanına uygular. Bu sayade küçük sayılar ile büyük sayıları yer değişirerek sıralama işlemini gerçekleştirir.
 
 rakamlar.sort((a, b) => a - b);
 console.log(rakamlar);
