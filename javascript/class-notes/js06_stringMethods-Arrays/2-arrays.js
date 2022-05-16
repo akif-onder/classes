@@ -51,3 +51,42 @@ console.log(sonYas, kisiler);
 //? ===========================================================
 //?  DİZİYİ DEĞİŞTİREN (MUTATOR) METOTLAR
 //? ===========================================================
+
+const cars = ['BMW', 'Prosche', 'Mercedes', 'Fiat'];
+
+//* pop() son elemanı siler ve sildiği elemanı döndürüyor.
+const deleted = cars.pop();
+console.log(cars, 'Silinen:', deleted);
+
+//* push() dizinin sonuna eleman ekler ve dizinin son eleman sayisini dondurur.
+const n = cars.push('Volvo');
+console.log(cars, n);
+
+//* unshift dizinin 0. indeksine eleman ekler ve dizinin son eleman sayisini dondurur.
+const boyut = cars.unshift('Audi');
+console.log(boyut, cars);
+
+//* dizinin 0. indeks elemanini siler ve silenen elemani dondurur.
+const silinen = cars.shift();
+console.log(silinen, cars);
+
+//* Dizinin tamamini ters sıraya cevirdi.
+console.log(cars.reverse());
+console.log(cars);
+
+//* sort() Diziyi alfabetik olarak siralar.
+console.log(cars.sort());
+
+const rakamlar = [3, 5, 1, 10, 55];
+console.log(rakamlar.sort()); //! Alfabetik sıralıdığı için doğru sonuç çıkmayabilri.
+
+//* sort metodu diziyi iterasyona uğratır ve prametre olark aldığı arrow fonksiyonunu dizini her bir elemanına uygular. Bu sayade küçük sayılar ile büyük sayıları yer değişirerek sıralama işlemini gerçekleştirir.
+
+rakamlar.sort((a, b) => a - b);
+console.log(rakamlar);
+
+cars.splice(1, 0, 'Vosvos');
+console.log(cars); //! 1. indise Vosvos ekle (eleman sayisi bir artar)
+
+cars.splice(2, 1, 'Anadol'); //! 2. indistekini Anadol olarak değiştir (Elamn sayisi değişmez)
+console.log(cars);
