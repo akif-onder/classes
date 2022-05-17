@@ -71,5 +71,31 @@ ul li {
   width: 4rem;
   height: 4rem;
 }
+.container3 {
+  background-color: mediumspringgreen;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.container3 div {
+  background-color: mediumvioletred;
+  width: 5rem;
+  margin: 1rem;
+  flex-grow: 1; /*? tüm div'lerin büyüme oranına 1 verdik.*/
+}
 
+div.grow2 {
+  /*? grow2 classindakiler diğerlerine göre 2 kat daha fazla büyüyebilir.*/
+  flex-grow: 2;
+}
 
+div.grow3 {
+  /*? grow3 classindakiler diğerlerine göre 3 kat daha fazla büyüyebilir.*/
+  flex-grow: 3;
+}
+
+div.nogrow {
+  /*? nogrow classindakiler diğerlerine göre hiç büyümezler*/
+  flex-grow: 0;
+}
