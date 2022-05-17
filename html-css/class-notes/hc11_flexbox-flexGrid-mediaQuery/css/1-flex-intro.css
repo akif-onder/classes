@@ -1,5 +1,6 @@
 * {
   font-size: 1.5rem;
+  margin: 0;
 }
 
 .container {
@@ -83,6 +84,7 @@ ul li {
   width: 5rem;
   margin: 1rem;
   flex-grow: 1; /*? tüm div'lerin büyüme oranına 1 verdik.*/
+  flex-basis: auto;
 }
 
 div.grow2 {
@@ -98,4 +100,32 @@ div.grow3 {
 div.nogrow {
   /*? nogrow classindakiler diğerlerine göre hiç büyümezler*/
   flex-grow: 0;
+}
+
+.container4 {
+  background-color: indianred;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.container4 div {
+  background-color: yellowgreen;
+  margin: 1rem;
+}
+div.div1 {
+  width: 10%;
+}
+
+div.div2 {
+  width: 20%;
+}
+
+div.div3 {
+  width: 30%;
+}
+
+div.div4 {
+  width: 40%;
 }
