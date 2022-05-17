@@ -14,6 +14,9 @@ body {
   left: -17vw;
   transition: left 1s;
 }
+.sol-menu:hover {
+  left: 0;
+}
 
 .sol-menu .title {
   position: relative;
@@ -24,6 +27,11 @@ body {
 .sol-menu .title i {
   position: absolute;
   right: 0.5rem;
+  transition: transform 1s;
+}
+
+.sol-menu:hover i {
+  transform: rotate(180deg);
 }
 
 .sol-menu ul {
@@ -37,15 +45,4 @@ body {
   text-decoration: none;
   color: white;
   padding: 0.7rem;
-}
-
-.sol-menu:hover {
-  left: 0;
-}
-
-.sol-menu i {
-  transition: transform 1s;
-}
-.sol-menu:hover i {
-  transform: rotate(180deg);
 }
