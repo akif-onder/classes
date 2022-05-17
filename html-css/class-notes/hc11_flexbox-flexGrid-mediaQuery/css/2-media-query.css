@@ -1,4 +1,8 @@
+@import 'theme.css';
+
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: var(--ff-monteserrat);
+  font-weight: 500;
 }
