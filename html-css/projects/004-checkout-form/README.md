@@ -38,8 +38,8 @@ At the end of the this project, students will be able to;
 
 ## Resources
 
-- [Images]("./IMG")
+- [Images](./IMG/)
 
-- [Fonts]("./FONTS")
+- [Fonts](./FONTS/)
 
 <center> ⌛ Happy Coding  ✍ </center>
