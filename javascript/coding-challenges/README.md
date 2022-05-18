@@ -8,5 +8,5 @@ List of coding challenges within JavaScript workshop as follows;
 
 - [JS-CC-003 : Reverse Strings](./CC-03/README.md)
 
-- [JS-CC-004 : Reverse Strings](./CC-04/README.md)
+- [JS-CC-004 : Email Validator](./CC-04/README.md)
 
