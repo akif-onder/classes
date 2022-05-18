@@ -1,4 +1,4 @@
-# ASSIGMENT-1
+# ASSIGMENT-2
 
 Klasörde ekran alıntıları gözüken 3 adet assigment'ı çarşamba gününe kadar yapmanızı rica ediyoruz :)
 

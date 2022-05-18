@@ -1,4 +1,4 @@
-## ASSIGMENT-3
+## ASSIGMENT-3 (FLEX NAV AND LEFT SIDE MENU)
 
 1-) Ekran ciktisi görünen Sol Açılır menüyü transition kullanarak yapınız.
 ![Sol Menu](./sol-acilir-menu-transition.png)
