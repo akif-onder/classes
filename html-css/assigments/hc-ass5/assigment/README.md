@@ -4,4 +4,4 @@
 
   https://css-grid-ios.netlify.app/
 
-  ![CSS-GRID IOS CALC](./css-grid-ios-calc.png)
+  ![CSS-GRID IOS CALC](./css-grid-ios.png)
