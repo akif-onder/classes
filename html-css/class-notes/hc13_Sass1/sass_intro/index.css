@@ -122,4 +122,48 @@ main img {
   background-color: hotpink;
 }
 
+.footer .socialIcons {
+  display: flex;
+  height: 8rem;
+}
+.footer .socialIcons .social1 {
+  width: 20%;
+  height: 100%;
+  background-color: rgba(215, 99, 99, 0.951);
+  color: #990000;
+  font-size: 1rem;
+}
+.footer .socialIcons .social2 {
+  width: 20%;
+  height: 100%;
+  background-color: rgba(226, 139, 139, 0.951);
+  color: #55004e;
+  font-size: 2rem;
+}
+.footer .socialIcons .social3 {
+  width: 20%;
+  height: 100%;
+  background-color: rgba(236, 180, 180, 0.951);
+  color: #0fa8a1;
+  font-size: 3rem;
+}
+.footer .socialIcons .social4 {
+  width: 20%;
+  height: 100%;
+  background-color: rgba(246, 221, 221, 0.951);
+  color: #121456;
+  font-size: 4rem;
+}
+.footer .socialIcons .social5 {
+  width: 20%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.951);
+  color: #64c217;
+  font-size: 5rem;
+}
+
+.footer {
+  background-color: gray;
+}
+
 /*# sourceMappingURL=index.css.map */

@@ -1,18 +1,19 @@
+@import 'variables';
 * {
   margin: 0;
 }
 
-//********************************************
-//! Variable Declaration
-//********************************************
-$bgColor: pink;
-$fontColor: white;
-$fontSize: 1.2rem;
-$fontFamily: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-$navBgColor: #30a7c3;
-$myBorder: 2px solid rgb(175, 29, 29);
-$myLinkSize: 1.1rem;
-$bannerBgColor: #cc6699;
+// //********************************************
+// //! Variable Declaration
+// //********************************************
+// $bgColor: pink;
+// $fontColor: white;
+// $fontSize: 1.2rem;
+// $fontFamily: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+// $navBgColor: #30a7c3;
+// $myBorder: 2px solid rgb(175, 29, 29);
+// $myLinkSize: 1.1rem;
+// $bannerBgColor: #cc6699;
 
 //********************************************
 //! Variable Usage
@@ -141,5 +142,46 @@ main {
   .article2 {
     @extend .article1;
     background-color: hotpink;
+  }
+}
+
+//****** FOOTER *********
+
+//*************************
+//! FOR LOOP
+//*************************
+$textColor: #990000, #55004e, #0fa8a1, #121456, #64c217;
+
+.footer {
+  .socialIcons {
+    display: flex;
+    height: 8rem;
+
+    @for $i from 1 through 5 {
+      .social#{$i} {
+        width: 20%;
+        height: 100%;
+        background-color: lighten(rgba(205, 58, 58, 0.951), $i * 10);
+        color: nth($textColor, $i);
+        font-size: $i * 1rem;
+      }
+    }
+  }
+}
+
+//***********************************************
+//! IF-ELSE
+//************************************************
+
+$dark: 2;
+
+.footer {
+  @if $dark==3 {
+    background-color: white;
+    color: black;
+  } @else if $dark==2 {
+    background-color: gray;
+  } @else {
+    background-color: green;
   }
 }
