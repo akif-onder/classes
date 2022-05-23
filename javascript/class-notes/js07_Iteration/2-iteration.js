@@ -47,3 +47,17 @@ console.log(fiyatlar);
 //* ======================================================
 //*                       MAP METHOD
 //* ======================================================
+
+//*-------------- ÖRNEK -------------------
+//* names dizisin içerisindeki her ismi büyük harf olarak
+//* yeni bir diziye saklayalım.
+
+const isimler = [
+  "Ahmet",
+  "mehmet",
+  "ismet",
+  "SAFFET",
+  "Can",
+  "Canan",
+  "Cavidan",
+];
