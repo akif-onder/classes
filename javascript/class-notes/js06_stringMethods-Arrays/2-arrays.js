@@ -90,3 +90,80 @@ console.log(cars); //! 1. indise Vosvos ekle (eleman sayisi bir artar)
 
 cars.splice(2, 1, 'Anadol'); //! 2. indistekini Anadol olarak değiştir (Elamn sayisi değişmez)
 console.log(cars);
+
+//? ===========================================================
+//?  DİZİ ERİŞİM METOTLARI
+//? ===========================================================
+const sayilar1 = [3, 5, 2, '2', 'üc', 2, 'bes', 5];
+
+//* includes()
+//*-----------------------------------------------------------
+console.log(sayilar1.includes('5')); //false
+console.log(sayilar1.includes(5)); //true
+
+//* indexOf(),  lastIndexOf();
+//*-----------------------------------------------------------
+
+//* ilk eslesen indeksi dondurur.
+const ikiIndeks = sayilar1.indexOf(2);
+console.log("2'nin son indeksi:", sayilar1.lastIndexOf(2)); //5
+console.log("2'nin son ilk indeksi:", ikiIndeks); //2
+
+//* Ornek
+//*-----------------------------------------------------------
+const arananString = prompt('Aranan sayiyi girinz:');
+const arananNumber = Number(arananString);
+
+let bulunduMu = false;
+if (sayilar1.includes(arananString)) {
+  console.log("Arananın String'in indeksi:", sayilar1.indexOf(arananString));
+  bulunduMu = true;
+}
+if (sayilar1.includes(arananNumber)) {
+  console.log('Arananın Sayinin indeksi:', sayilar1.indexOf(arananNumber));
+  bulunduMu = true;
+}
+
+if (!bulunduMu) {
+  console.log('Aranan bulunamamıştır');
+}
+
+//* join()
+//*-----------------------------------------------------------
+//? join, dizinin elamanlari birlestirip string hale cevirir.
+
+// const sayilar1 = [3, 5, 2, "2", "üc", 2, "bes", 5];
+
+const stringSayilar1 = sayilar1.join(' ');
+console.log(stringSayilar1);
+
+//* toString()
+//*-----------------------------------------------------------
+//? toString fonksiyonu sadece dizinin elemanlarinin aralarina
+//? (virgul) koyarak birlestirir ve string yapar.
+
+const stringSayilar2 = sayilar1.toString();
+console.log(stringSayilar2);
+
+//* slice()
+//*-----------------------------------------------------------
+
+const arabalar = ['bmw', 'mercedes', 'audi', 'ferrari', 'anadol'];
+const sliced1 = arabalar.slice(2);
+console.log(sliced1);
+
+const sliced2 = arabalar.slice(1, 3); // start: inclusive, stop :exclusive
+console.log(sliced2);
+
+//* concat()
+//*-----------------------------------------------------------
+const yazilar = ['a', 'b', 'ad', 'soyad', 'yas'];
+const numbersArray = [3, 5, 1, 4, 7];
+const birlesik = yazilar.concat(
+  true,
+  numbersArray,
+  false,
+  ['a', 'b', 'c'],
+  [['x', 'y', 'z']] //nested
+);
+console.log(birlesik);
