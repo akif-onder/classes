@@ -48,3 +48,16 @@ footer.vertical{
     }
 
 }
+
+
+footer.middle {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    // border: 2px solid red;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    @extend .link-style;
+}
