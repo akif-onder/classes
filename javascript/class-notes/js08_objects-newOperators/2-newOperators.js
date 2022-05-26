@@ -1,7 +1,7 @@
 //* ======================================================
 //*    NEW GENERATION OPERATORS: DESTRUCTURING (OBJECT)
 //* ======================================================
-
+console.log('****** NEW OPERATORS *******');
 const car = {
   name: 'BMW',
   model: 1990,
