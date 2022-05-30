@@ -44,3 +44,22 @@ const javascriptKontrol = () => {
     }
   });
 };
+
+silBtn.onclick = function () {
+  ul.childElementCount > 0
+    ? ul.removeChild(ul.lastElementChild)
+    : alert('Silinecek dil kalmadi');
+};
+
+dilInput.addEventListener('keydown', (e) => {
+  // console.log(e);
+  if (e.keyCode === 13) {
+    ekleBtn.onclick();
+  }
+  // if (e.code === 'Enter') {
+  //   ekleBtn.onclick();
+  // }
+  if (e.code === 'Delete') {
+    silBtn.onclick();
+  }
+});
