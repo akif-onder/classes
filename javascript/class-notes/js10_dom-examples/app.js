@@ -63,3 +63,8 @@ dilInput.addEventListener('keydown', (e) => {
     silBtn.onclick();
   }
 });
+
+window.onload = () => {
+  javascriptKontrol();
+  dilInput.focus();
+};
