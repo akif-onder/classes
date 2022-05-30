@@ -27,8 +27,20 @@ console.log(buttons);
 ekleBtn.onclick = function () {
   if (!dilInput.value) {
     alert('Lütfen bir dil giriniz');
-  }else{
-    ul.innerHTML =
+  } else {
+    ul.innerHTML += ` <li>${dilInput.value}</li>`;
+    dilInput.value = '';
+    javascriptKontrol();
   }
-  <li></li>
+};
+
+const javascriptKontrol = () => {
+  document.querySelectorAll('ul li').forEach((dil) => {
+    const kucukHarf = dil.textContent.toLowerCase();
+    if (kucukHarf === 'javascript') {
+      // dil.className = 'red';
+      //?Alternatif yöntem
+      dil.setAttribute('class', 'red');
+    }
+  });
 };
