@@ -68,7 +68,7 @@ section#courses .nav-link {
   color: white;
 }
 
-section#courses .nav-link.active {
+section#courses .nav-item .nav-link.active {
   background-color: var(--red);
 }
 
