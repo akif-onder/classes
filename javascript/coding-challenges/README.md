@@ -10,3 +10,9 @@ List of coding challenges within JavaScript workshop as follows;
 
 - [JS-CC-004 : Email Validator](./CC-04/README.md)
 
+- [JS-CC-005 : Roman Numerals](./CC-05/README.md)
+
+- [JS-CC-006 : Merge Arrays](./CC-06/README.md)
+
+- [JS-CC-007 : Count Digits](./CC-07/README.md)
+
