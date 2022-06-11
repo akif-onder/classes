@@ -24,8 +24,16 @@ btnContainer.addEventListener('click', (e) => {
 });
 
 const appendNumber = (num) => {
-  //? Eger ilk olarak  0 girilmisse geri don
-  if (!currOperand && num === '0') return;
+  //? Eger onceden 0 girilmisse ve tekrardan 0 girilise geri don
+  if (currOperand === '0' && num === '0') return;
+
+  //? Eğer ilk olarak 0 girilmisse ve sonrasinda da . haricinde baska
+  //? bir sayi girilmis ise sadece girilen yeni sayiyi degiskene aktar.
+  //? Orn: 09 => 9 , 03 => 3 , 0.1 => 0.1
+  if (currOperand === '0' && num !== '.') {
+    currOperand = num;
+    return;
+  }
 
   //? Eğer şu anki sayi . ise ve önceki girilen sayi . iceriyorsa geri don
   if (num === '.' && currOperand.includes('.')) return;
