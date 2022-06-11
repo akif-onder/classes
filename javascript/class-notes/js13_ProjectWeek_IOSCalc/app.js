@@ -90,7 +90,7 @@ const calculate = () => {
       calculation = prev / current;
       break;
     default:
-      break;
+      return;
   }
 
   currOperand = calculation;
