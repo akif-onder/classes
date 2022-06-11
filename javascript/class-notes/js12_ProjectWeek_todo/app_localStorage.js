@@ -12,16 +12,19 @@ renderSavedTodos();
 
 function renderSavedTodos() {
   todos.forEach((todo) => {
-    //? her bir todo objesini destructure yaptık
-    const { id, content, isDone } = todo;
+    createListElement(todo);
+  });
+}
 
-    todoUl.innerHTML += `
-    <li>
+function createListElement(todo) {
+  //? her bir todo objesini destructure yaptık
+  const { id, content, isDone } = todo;
+  todoUl.innerHTML += `
+    <li class=${isDone && 'checked'}>
       <i class="fa fa-check"></i>
       <p>${content}</p>
       <i class="fa fa-trash"></i>
     </li>`;
-  });
 }
 
 //? Baslangicta input aktif olsun
@@ -46,12 +49,7 @@ btn.addEventListener('click', () => {
     //?todos dizisinin son halini localStorage'e sakla
     localStorage.setItem('todos', JSON.stringify(todos));
 
-    todoUl.innerHTML += `
-    <li>
-      <i class="fa fa-check"></i>
-      <p>${todoInput.value}</p>
-      <i class="fa fa-trash"></i>
-    </li>`;
+    createListElement(todoObject);
     todoInput.value = '';
   }
 });
