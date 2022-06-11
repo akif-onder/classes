@@ -20,7 +20,7 @@ function createListElement(todo) {
   //? her bir todo objesini destructure yaptık
   const { id, content, isDone } = todo;
   todoUl.innerHTML += `
-    <li id=${id} class=${isDone ? 'checked' : ''}>
+     <li id=${id} ${isDone ? `class="checked"` : ''} >
       <i class="fa fa-check"></i>
       <p>${content}</p>
       <i class="fa fa-trash"></i>
