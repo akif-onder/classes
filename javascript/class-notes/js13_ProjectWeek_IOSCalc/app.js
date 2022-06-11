@@ -18,13 +18,16 @@ btnContainer.addEventListener('click', (e) => {
 });
 
 const appendNumber = (num) => {
-  if (num === '.' && String(currOperand).includes('.')) return;
-
+  //? Eger ilk olarak  0 girilmisse geri don
   if (!currOperand && num === '0') return;
 
-  currOperand = num;
+  //? Eğer şu anki sayi . ise ve önceki girilen sayi . iceriyorsa geri don
+  if (num === '.' && currOperand.includes('.')) return;
+
+  //? Girilen sayilari birlestir.
+  currOperand += num;
 };
 
 const updateDisplay = () => {
-  currDisp.textContent += currOperand;
+  currDisp.textContent = currOperand;
 };
