@@ -21,7 +21,19 @@ btn.addEventListener('click', (e) => {
 });
 
 todoInput.addEventListener('keydown', (e) => {
+  console.log(e);
   if (e.key === 'Enter') {
     btn.click();
+  }
+});
+
+todoUl.addEventListener('click', (e) => {
+  //!Event, sil butonlarının birisinden geldi ise
+  if (e.target.classList.contains('fa-trash')) {
+    e.target.parentElement.remove();
+  }
+
+  if (e.target.classList.contains('fa-check')) {
+   
   }
 });
