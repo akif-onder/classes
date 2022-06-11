@@ -1,24 +1,34 @@
 //* =================================================
 //*                     IOS CALCULATOR
 //* =================================================
+//? Ekranlar
 const prevDisp = document.querySelector('.previous-display');
 const currDisp = document.querySelector('.current-display');
 
+//?Button container
 const btnContainer = document.querySelector('.buttons-container');
 
+//? ara degerler icin degisken tanimlamalari
 let currOperand = '';
 let previousOperand = '';
 let operation = '';
 
 //? Butonlari tasiyan container icin event tanimlamasi
 btnContainer.addEventListener('click', (e) => {
+  //? Herhangi bir sayi(num) sayiya tiklanildi ise
   if (e.target.classList.contains('num')) {
     appendNumber(e.target.textContent);
     updateDisplay();
   }
 
+  //? Herhangi bir operator butonuna (+,-,x,/) tiklanildi ise
   if (e.target.classList.contains('operator')) {
     chooseOperator(e.target.textContent);
+    updateDisplay();
+  }
+  //? Esittir butonuna tiklanildi ise
+  if (e.target.classList.contains('equal')) {
+    calculate();
     updateDisplay();
   }
 });
@@ -66,8 +76,6 @@ const calculate = () => {
   const prev = Number(previousOperand);
   const current = Number(currOperand);
 
-  console.log(prev, current);
-
   switch (operation) {
     case '+':
       calculation = prev + current;
@@ -86,4 +94,9 @@ const calculate = () => {
   }
 
   currOperand = calculation;
+
+  //? Esittir butonuna tiklanildiginda ekranda gozukmemesi icin
+  //? previousOperand ve operation'ı silmemiz gerekir
+  previousOperand = '';
+  operation = '';
 };
