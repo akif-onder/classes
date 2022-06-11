@@ -6,7 +6,23 @@ const btn = document.getElementById('todo-button');
 const todoInput = document.getElementById('todo-input');
 const todoUl = document.getElementById('todo-ul');
 
-let todos = [];
+let todos = JSON.parse(localStorage.getItem('todos')) || [];
+
+renderSavedTodos();
+
+function renderSavedTodos() {
+  todos.forEach((todo) => {
+    //? her bir todo objesini destructure yaptık
+    const { id, content, isDone } = todo;
+
+    todoUl.innerHTML += `
+    <li>
+      <i class="fa fa-check"></i>
+      <p>${content}</p>
+      <i class="fa fa-trash"></i>
+    </li>`;
+  });
+}
 
 //? Baslangicta input aktif olsun
 window.onload = function () {
@@ -14,10 +30,22 @@ window.onload = function () {
 };
 
 //? Add Buton Event'inin tanimanmasi
-btn.addEventListener('click', (e) => {
+btn.addEventListener('click', () => {
   if (!todoInput.value) {
     alert('Please enter your todo');
   } else {
+    const todoObject = {
+      id: new Date().getTime(),
+      isDone: false,
+      content: todoInput.value,
+    };
+
+    //?Yeni olsuturulan todo'yu diziye sakla
+    todos.push(todoObject);
+
+    //?todos dizisinin son halini localStorage'e sakla
+    localStorage.setItem('todos', JSON.stringify(todos));
+
     todoUl.innerHTML += `
     <li>
       <i class="fa fa-check"></i>
