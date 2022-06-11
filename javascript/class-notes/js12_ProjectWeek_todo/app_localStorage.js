@@ -6,6 +6,8 @@ const btn = document.getElementById('todo-button');
 const todoInput = document.getElementById('todo-input');
 const todoUl = document.getElementById('todo-ul');
 
+let todos = [];
+
 //? Baslangicta input aktif olsun
 window.onload = function () {
   todoInput.focus();
