@@ -28,10 +28,23 @@ const renderError = (err) => {
 const renderCountry = (country) => {
   console.log(country);
   const countriesDiv = document.querySelector('.countries');
-  const { capital } = country;
-  console.log(capital);
+
+  //!destr
+  const {
+    capital,
+    name: { common },
+    region,
+    flags: { svg },
+    languages,
+    currencies,
+  } = country;
+
+  // console.log(capital, common, region, svg);
+  console.log(Object.values(languages));
+  console.log(Object.values(currencies)[0].name);
+  console.log(Object.values(currencies)[0].symbol);
 };
 
 fetchCountry('turkey');
-// fetchCountry('usa');
-// fetchCountry('france');
+fetchCountry('usa');
+fetchCountry('belgium');
