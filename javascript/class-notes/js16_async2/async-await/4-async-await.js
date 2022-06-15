@@ -18,13 +18,13 @@
 //* satirdaki kodun durudurulmasini saglar. Yapilan istek yerine getirilip sonuc
 //* degerlerinin dondurulmesine ile kodun calismasi devam eder.
 
-let error = false;
+let hata = false;
 const getUsers = async function () {
   try {
-    const res = await fetch('https://api.github.com/user');
+    const res = await fetch('https://api.github.com/users');
     if (!res.ok) {
-      error = true;
-      throw new Error(`Something went wrong:${res.status}`);
+      hata = true;
+      // throw new Error(`Something went wrong:${res.status}`);
     }
     const data = await res.json();
     updateDom(data);
@@ -37,8 +37,11 @@ getUsers();
 
 const updateDom = (data) => {
   const userDiv = document.querySelector('.users');
-  if (error) {
-    userDiv.innerHTML = `<h1 class="text-danger">Data can not be fetched</h1>`;
+
+  if (hata) {
+    userDiv.innerHTML = `<h1 class="text-danger">Data can not be fetched</h1>
+    <img src="./img/404.png" alt="" />
+    `;
   } else {
     data.forEach((user) => {
       //!destr
