@@ -24,3 +24,5 @@ List of coding challenges within JavaScript workshop as follows;
 
 - [JS-CC-011 : Palindromic and Perfect Numbers Lists](./CC-11/README.md)
 
+- [JS-CC-012 : Vowels](./CC-12/README.md)
+
