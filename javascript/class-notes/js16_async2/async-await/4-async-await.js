@@ -30,6 +30,8 @@ const getUsers = async function () {
     updateDom(data);
   } catch (error) {
     console.log(error);
+  } finally {
+    hata = false;
   }
 };
 
