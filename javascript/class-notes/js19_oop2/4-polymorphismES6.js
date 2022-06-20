@@ -55,7 +55,7 @@ class Magazine extends Book {
 const mag1 = new Magazine('Kasagi', 'Omer Seyfettin', 1940, 'Nov');
 console.log(mag1);
 console.log(mag1.getSummary());
-// mag1.setPrice(100, 1.2);
-mag1.setPriceParent(100);
+mag1.setPrice(100, 1.2);
+
 
 console.log(mag1);
