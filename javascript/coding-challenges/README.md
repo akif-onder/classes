@@ -26,3 +26,5 @@ List of coding challenges within JavaScript workshop as follows;
 
 - [JS-CC-012 : Vowels](./CC-12/README.md)
 
+- [JS-CC-013 : Stopwatch](./CC-13/README.md)
+
