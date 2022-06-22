@@ -2,11 +2,11 @@ const Msg = (props) => {
   // console.log(props);
 
   //! Destructiring
-  const { mesaj } = props;
+  const { name } = props;
 
   return (
     <div>
-      <h3>Merhaba {mesaj}</h3>
+      <h3>Merhaba {name}</h3>
     </div>
   );
 };
