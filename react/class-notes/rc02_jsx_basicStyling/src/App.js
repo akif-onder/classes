@@ -1,6 +1,8 @@
 //? React,JSX kullanmaktadir.
 //? JSX'de, HTMl elementleri dogrudan JS icerisinde kullanilabilir
 
+import Header from './Header';
+
 //! Componentler, HTML,CSS ve JS kodlarindan meydana gelmiş
 //! bir kod parcacigidir.
 
@@ -14,10 +16,13 @@
 
 //? App componentinin tanimlanmasi
 function App() {
+  //* JSX
+  //? stillendirme yapilmayacaksa container icin <> kullanilabilir
   return (
-    <div>
+    <>
+      <Header />
       <h1>APP</h1>
-    </div>
+    </>
   );
 }
 
