@@ -1,7 +1,11 @@
 import './Buton.css';
 
-const Buton = () => {
-  return <div>Buton</div>;
+const Buton = ({ btnName }) => {
+  return (
+    <div className="title">
+      <button className="btn-blue">{btnName}</button>
+    </div>
+  );
 };
 
 export default Buton;
