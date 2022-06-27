@@ -16,7 +16,7 @@ class Counter extends Component {
     super(props);
 
     this.state = {
-      count: 0,
+      count: props.count || 0,
     };
     //* handleInc metodunun Counter class'ina baglanmasi
     this.handleInc = this.handleInc.bind(this);
@@ -45,7 +45,7 @@ class Counter extends Component {
         <button onClick={this.handleInc} className="btn btn-success">
           INC
         </button>
-        <button className="btn btn-danger">CLR</button>
+
         <button onClick={this.handleDec} className="btn btn-warning">
           DEC
         </button>
