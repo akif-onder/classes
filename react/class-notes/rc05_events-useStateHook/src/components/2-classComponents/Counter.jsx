@@ -12,13 +12,43 @@
 import React, { Component } from 'react';
 
 class Counter extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      count: 0,
+    };
+    //* handleInc metodunun Counter class'ina baglanmasi
+    this.handleInc = this.handleInc.bind(this);
+  }
+
+  handleInc() {
+    this.setState({
+      count: this.state.count + 1,
+    });
+  }
+  handleDec = () => {
+    this.setState({
+      count: this.state.count - 1,
+    });
+  };
+
+  //! Yazmis oldugumuz metotlar default olarak classa baglanmaz.
+  //! Ancak, React built-in fonksiyonlari baglidir.
+
+  //* Bunun icin metotlarimizi ya constructor icerisinde baglamaliyiz yada otomatik baglamayi saglayan arrow fonksiyonlarini kullanmaliyiz.
+
   render() {
     return (
       <div className="container text-center mt-4">
-        <h1 className="display-4 text-danger m-4">COUNT:</h1>
-        <button className="btn btn-success">INC</button>
+        <h1 className="display-4 text-danger m-4">COUNT:{this.state.count}</h1>
+        <button onClick={this.handleInc} className="btn btn-success">
+          INC
+        </button>
         <button className="btn btn-danger">CLR</button>
-        <button className="btn btn-warning">DEC</button>
+        <button onClick={this.handleDec} className="btn btn-warning">
+          DEC
+        </button>
       </div>
     );
   }
