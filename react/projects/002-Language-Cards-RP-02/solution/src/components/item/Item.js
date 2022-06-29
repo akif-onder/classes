@@ -6,8 +6,12 @@ const Item = ({ card }) => {
 
   const { name, img, options } = card;
 
+  const handleClick = () => {
+    setShowLogo(!showLogo);
+  };
+
   return (
-    <div className="card" onClick={() => setShowLogo(!showLogo)}>
+    <div className="card" onClick={handleClick}>
       {showLogo ? (
         <div>
           <img className="card-logo" src={img} alt="" />
