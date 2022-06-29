@@ -9,3 +9,4 @@ List of teamwork agendas for Full Stack 11/22  learning path as follows;
 - [Sprint 4 - Week 1](./tw-005-student.pdf)
 - [Sprint 5 - Week 1](./tw-006-student.pdf)
 - [Sprint 5 - Week 2](./tw-007-student.pdf)
+- [Sprint 6 - Week 1](./tw-008-student.pdf)
