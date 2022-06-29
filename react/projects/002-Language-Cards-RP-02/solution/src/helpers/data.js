@@ -1,51 +1,51 @@
-import css from "../assets/css.png";
-import python from "../assets/python.png";
-import java from "../assets/java.png";
-import cpp from "../assets/cpp.png";
-import go from "../assets/go.png";
-import php from "../assets/php.png";
-import javascript from "../assets/javascript.png";
-import html from "../assets/html.png";
+import css from '../assets/css.png';
+import python from '../assets/python.png';
+import java from '../assets/java.png';
+import cpp from '../assets/cpp.png';
+import go from '../assets/go.png';
+import php from '../assets/php.png';
+import javascript from '../assets/javascript.png';
+import html from '../assets/html.png';
 
 export const languages = [
   {
-    name: "javascript",
+    name: 'javascript',
     img: javascript,
-    options: ["Website Development", "1995", "Brendan Eich"],
+    options: ['Website Development', '1995', 'Brendan Eich'],
   },
   {
-    name: "html",
+    name: 'html',
     img: html,
-    options: ["Website Development", "1993", "Tim Berners-Lee"],
+    options: ['Website Development', '1993', 'Tim Berners-Lee'],
   },
   {
-    name: "css",
+    name: 'css',
     img: css,
-    options: ["Website Design", "1994", "Håkon Wium Lie"],
+    options: ['Website Design', '1994', 'Håkon Wium Lie'],
   },
   {
-    name: "python",
+    name: 'python',
     img: python,
-    options: ["AI", "1980", "Guido van Rossum"],
+    options: ['AI', '1980', 'Guido van Rossum'],
   },
   {
-    name: "java",
+    name: 'java',
     img: java,
-    options: ["BackEnd", "1990s", "Sun Microsystems"],
+    options: ['BackEnd', '1990s', 'Sun Microsystems'],
   },
   {
-    name: "c++",
+    name: 'c++',
     img: cpp,
-    options: ["Game Dev.", "1980s", "Bjarne Stroustrup"],
+    options: ['Game Dev.', '1980s', 'Bjarne Stroustrup'],
   },
   {
-    name: "go",
+    name: 'go',
     img: go,
-    options: ["Network", "2009", "Robert Griesemer"],
+    options: ['Network', '2009', 'Robert Griesemer'],
   },
   {
-    name: "php",
+    name: 'php',
     img: php,
-    options: ["BackEnd", "1995", "	Rasmus Lerdorf"],
+    options: ['BackEnd', '1995', '	Rasmus Lerdorf'],
   },
 ];
