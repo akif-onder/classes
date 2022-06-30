@@ -16,12 +16,10 @@
 //* (Optional)Bir componentin guncellenmesinin sonrasi (componentDidUpdate)
 //* Bir component'in DOM agacindan kaldirilmasi sonrasi(componentWillUnmount)
 
-
 import React from 'react';
 
-
 class LifeCycleMethods extends React.Component {
-   constructor(props) {
+  constructor(props) {
     super(props);
     this.state = {
       count: 0,
